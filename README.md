@@ -8,7 +8,7 @@ MUI框架使用的px。<br />
 选中项目->鼠标右键->属性->进入如下视图：<br />
 ![设置图](https://github.com/zhuming3834/jialebao/blob/master/images/5.jpg)
 <br />
-有几点要说明的：
+有几点要说明的：<br />
 1.导航栏高度44px，不需要转换为rem；<br />
 2.底部tabbar的高度49px，不需要转换为rem；<br />
 
