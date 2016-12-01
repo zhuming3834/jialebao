@@ -1,0 +1,320 @@
+body{
+	margin: 0px;
+	background-color: #eeeeee;
+	/*position: relative;*/
+}
+header{
+	height: 44px;
+	background-color: #b60915;
+	width: 100%;
+	position: relative;
+}
+.header-timer{
+	float: left;
+	margin-left: 10px;
+	width: 80px;
+	height: 32px;
+	line-height: 16px;
+	margin-top: 6px;
+	font-size: 14px;
+	color: #ffee46;
+	font-style: italic;
+	font-weight: bold;
+}
+.header-title{
+	position: absolute;
+	left: calc(50% - 75px);
+	width: 150px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 26px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.header-search{
+	height: 44px;
+	width: 44px;
+	float: right;
+	/*margin-right: 10px;*/
+	background-image: url(../images/搜索.png);
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.swiper-container{
+    width: 100%;
+    height: 2.931034rem;
+} 
+.swiper-container img{
+    width: 100%;
+    height: 2.931034rem;
+} 
+.recommend{
+	height: 0.568965rem;
+	background-color: white;
+	padding-top: 0.051724rem
+}
+.recommend img{
+	height: 0.517241rem;
+	width: 140px;
+	margin-left: 0.25862rem;
+	display: block;
+	float: left;
+}
+.recommend span{
+	display: inline-block;
+	float: left;
+	height: 0.517241rem;
+	line-height: 0.517241rem;
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 0.275862rem;
+}
+.type-list{
+	margin-top: 10px;
+	height: 1.293103rem;
+	background-color: white;
+	padding-top: 20px;
+}
+.type-list .type{
+	width: 25%;
+	height: 1.120689rem;
+	float: left;
+	text-align: center;
+}
+.type img{
+	/*display: block;*/
+	width: 0.724137rem;
+	height: 0.724137rem;
+}
+.type span{
+	display: block;
+	font-weight: bold;
+	color: black;
+	margin-top: 10px;
+	font-size: 0.224137rem;
+}
+.welfare{
+	margin-top: 10px;
+}
+.welfare img{
+	width: 100%;
+	height: 3.103448rem;
+}
+
+.today-select-title{
+	height: 0.689655rem;
+	text-align: center;
+	width: 100%;
+}
+.today-select{
+	margin-top: 10px;
+	padding-top: 18px;
+	background-color: white;
+}
+.today-select-title{
+	margin-bottom: 10px;
+}
+.today-select-title h3{
+	width: 100%;
+	height: 0.293103rem;
+	line-height: 0.293103rem;
+	margin: auto;
+	font-family: "微软雅黑";
+	font-size: 0.293103rem;
+	margin-bottom: 10px;
+}
+.today-select-title span{
+	width: 100%;
+	height: 0.293103rem;
+	line-height: 0.293103rem;
+	margin: auto;
+	font-family: "微软雅黑";
+	font-size: 0.255862rem;
+}
+.today-select-orange img{
+	width: 100%;
+	height: 2.586206rem;
+}
+.today-select-list{
+	height: calc(3.103448rem + 10px);
+}
+.today-select-list-type{
+	width: calc(50% - 1px);
+	height: 1.551724rem;
+	float: left;
+}
+.today-select-list-type img{
+	display: block;
+	float: left;
+	margin-left: 0.25862rem;
+	width: 1.206896rem;
+	height: 1.206896rem;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.today-select-list-type p{
+	float: left;
+	color: #3b3b3b;
+	font-weight: 800;
+	font-size: 0.25862rem;
+	margin: 0.431034rem 0px 0px 0px;
+}
+.today-select-list-type label{
+	margin-top: 10px;
+	float: left;
+	color: #bcbcbc;
+	font-size: 0.206896rem;
+}
+.today-select-list-type label span{
+	font-size: 0.172413rem;
+}
+.today-select-list .right-line{
+	border-right: 1px solid #ececec;
+}
+.today-select-list .bottom-line{
+	border-bottom: 1px solid #ececec;
+}
+.gift-artifact{
+	margin-top: 10px;
+	padding-top: 18px;
+	background-color: white;
+}
+.gift-artifact-list{
+	height: calc(3.103448rem + 6px);
+}
+.gift-artifact-list-left{
+	float: left;
+	height: 1.551724rem;
+	width: 3.362068rem;
+}
+.gift-artifact-list-left .bottom-line{
+	border-bottom: 1px solid #ececec;
+}
+.gift-artifact-list-left-top{
+	height: 1.551724rem;
+	margin-right: 5px;
+	position: relative;
+}
+.gift-artifact-list-left-top img{
+	display: block;
+	float: left;
+	width: 1.120689rem;
+	height: 1.120689rem;
+	margin-left: 0.517241rem;
+	margin-top: 0.206896rem;
+}
+.gift-artifact-list-left-top p{
+	display: block;
+	position: absolute;
+	z-index: 100;
+	color: #3b3b3b;
+	font-weight: 800;
+	font-size: 0.25862rem;
+	top: 0.38rem;
+	right: 15px;
+	text-align: right;
+	margin: 0px;
+}
+.gift-artifact-list-left-top label{
+	text-align: right;
+	margin-top: 10px;
+	color: #bcbcbc;
+	font-size: 0.206896rem;
+	position: absolute;
+	top: calc(0.52rem + 0.172413rem);
+	right: 15px;
+}
+.gift-artifact-list-left-top label span{
+	font-size: 0.172413rem;
+	text-align: right;
+}
+.gift-artifact-list-right{
+	float: left;
+	width: calc(100% - 3.362068rem - 6px);
+	border-left: 1px solid #ececec;
+	text-align: center;
+}
+.gift-artifact-list-right p{
+	float: right;
+	margin-right: 0.413793rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0px;
+	font-size: 0.310344rem;
+}
+.gift-artifact-list-right label{
+	float: right;
+	margin-top: 10px;
+	margin-right: 0.413793rem;
+	color: #bcbcbc;
+	font-size: 0.206896rem;
+	display: block;
+}
+.gift-artifact-list-right label span{
+	font-size: 0.172413rem;
+	text-align: right;
+}
+.gift-artifact-list-right img{	
+	width: 1.982758rem;
+	height: 1.982758rem;
+}
+.gift-artifact-list-right div{	
+	text-align: right;
+	color: #bcbcbc;
+	font-size: 0.15rem;
+	margin-right: 0.3rem;
+}
+.tabbar{
+	width: 100%;
+	height: 49px;
+	position: fixed;
+	bottom: 0px;
+	background-color: #f2f5f5;
+}
+.tabbar-icon{
+	width: 20%;
+	height: 14px;
+	padding-top: 30px;
+	margin-top: 5px;
+	color: #9da0a0;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+}
+.home{
+	background-image: url(../images/home.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+.maicai{
+	background-image: url(../images/购物篮.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+.shengqi{
+	background-image: url(../images/礼物.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+.me{
+	background-image: url(../images/我的.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+.share{
+	background-image: url(../images/分享.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
+.home-active{
+	background-image: url(../images/home-active.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+}
