@@ -5,8 +5,9 @@
 这个里面还有一个sublime的插件把px转换为rem。由于我的这个小的Demo使用的Hbuilder开发的，我就给个HBuilder<br />
 里面是怎么设置的：[Hublider中如何将px转换为rem](http://ask.dcloud.net.cn/article/1013)<br />
 MUI框架使用的px。<br />
-选中项目->鼠标右键->属性->进入如下视图：
-图片
+选中项目->鼠标右键->属性->进入如下视图：<br />
+![设置图](https://github.com/zhuming3834/jialebao/blob/master/images/5.jpg)
+<br />
 有几点要说明的：
 1.导航栏高度44px，不需要转换为rem；<br />
 2.底部tabbar的高度49px，不需要转换为rem；<br />
