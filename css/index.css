@@ -86,7 +86,7 @@ header{
 }
 .type-list .type{
 	width: 25%;
-	height: 1.120689rem;
+	height: 1.293103rem;
 	float: left;
 	text-align: center;
 }
@@ -103,7 +103,8 @@ header{
 	font-size: 0.224137rem;
 }
 .welfare{
-	margin-top: 10px;
+	margin-top: 8px;
+	height: 3.072rem;
 }
 .welfare img{
 	width: 100%;
