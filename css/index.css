@@ -4,72 +4,79 @@ body{
 	/*position: relative;*/
 }
 header{
-	height: 44px;
+	height: 0.88rem;
 	background-color: #b60915;
 	width: 100%;
-	position: relative;
+	position: fixed;
+	z-index: 10;
 }
 .header-timer{
 	float: left;
 	margin-left: 10px;
-	width: 80px;
-	height: 32px;
-	line-height: 16px;
-	margin-top: 6px;
-	font-size: 14px;
+	width: 1.5rem;
+	height: 0.8rem;
+	line-height: 0.4rem;
+	margin-top: 0.04rem;
+	font-size: 0.25rem;
 	color: #ffee46;
 	font-style: italic;
 	font-weight: bold;
+	text-align: center;
 }
 .header-title{
 	position: absolute;
-	left: calc(50% - 75px);
-	width: 150px;
-	height: 44px;
-	line-height: 44px;
-	font-size: 26px;
+	left: calc(50% - 1.25rem);
+	width: 2.5rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	font-size: 0.4rem;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 }
 .header-search{
-	height: 44px;
-	width: 44px;
+	height: 0.88rem;
+	width: 0.88rem;
 	float: right;
 	/*margin-right: 10px;*/
 	background-image: url(../images/搜索.png);
-	background-size: 24px 24px;
+	background-size: 0.4rem 0.4rem;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
+.content{
+	position: relative;
+	top: 0.88rem;
+}
 .swiper-container{
     width: 100%;
-    height: 2.931034rem;
+    height: 2.90138rem;
 } 
 .swiper-container img{
     width: 100%;
-    height: 2.931034rem;
+    height: 2.90138rem;
 } 
 .recommend{
 	height: 0.568965rem;
 	background-color: white;
-	padding-top: 0.051724rem
+	padding-top: 0.051724rem;
+	position: relative;
 }
 .recommend img{
 	height: 0.517241rem;
 	width: 140px;
-	margin-left: 0.25862rem;
+	margin-left: 10px;
 	display: block;
 	float: left;
 }
 .recommend span{
-	display: inline-block;
-	float: left;
+	display: block;
 	height: 0.517241rem;
 	line-height: 0.517241rem;
-	margin-left: 10px;
 	font-weight: bold;
-	font-size: 0.275862rem;
+	font-size: 0.25rem;
+	position: absolute;
+	right: 10px;
 }
 .type-list{
 	margin-top: 10px;
@@ -85,8 +92,8 @@ header{
 }
 .type img{
 	/*display: block;*/
-	width: 0.724137rem;
-	height: 0.724137rem;
+	width: 0.7769rem;
+	height: 0.7769rem;
 }
 .type span{
 	display: block;
@@ -100,7 +107,7 @@ header{
 }
 .welfare img{
 	width: 100%;
-	height: 3.103448rem;
+	height: 3.072rem;
 }
 
 .today-select-title{
@@ -133,9 +140,13 @@ header{
 	font-family: "微软雅黑";
 	font-size: 0.255862rem;
 }
+.today-select-orange{
+	width: 100%;
+	height: 2.56rem;
+}
 .today-select-orange img{
 	width: 100%;
-	height: 2.586206rem;
+	height: 2.56rem;
 }
 .today-select-list{
 	height: calc(3.103448rem + 10px);
@@ -144,6 +155,7 @@ header{
 	width: calc(50% - 1px);
 	height: 1.551724rem;
 	float: left;
+	position: relative;
 }
 .today-select-list-type img{
 	display: block;
@@ -159,13 +171,18 @@ header{
 	color: #3b3b3b;
 	font-weight: 800;
 	font-size: 0.25862rem;
-	margin: 0.431034rem 0px 0px 0px;
+	margin: 0.4rem 0px 0px 0px;
 }
 .today-select-list-type label{
 	margin-top: 10px;
+	margin-right: 10px;
 	float: left;
 	color: #bcbcbc;
 	font-size: 0.206896rem;
+	display: block;
+	position: absolute;
+	top: calc(0.52rem + 0.172413rem);
+	left: calc(0.25862rem + 1.206896rem + 15px);
 }
 .today-select-list-type label span{
 	font-size: 0.172413rem;
@@ -182,7 +199,7 @@ header{
 	background-color: white;
 }
 .gift-artifact-list{
-	height: calc(3.103448rem + 6px);
+	height: calc(3.1rem + 6px);
 }
 .gift-artifact-list-left{
 	float: left;
@@ -232,9 +249,11 @@ header{
 }
 .gift-artifact-list-right{
 	float: left;
+	height: calc(3.1rem - 2px);
 	width: calc(100% - 3.362068rem - 6px);
 	border-left: 1px solid #ececec;
 	text-align: center;
+	position: relative;
 }
 .gift-artifact-list-right p{
 	float: right;
@@ -263,58 +282,64 @@ header{
 	text-align: right;
 	color: #bcbcbc;
 	font-size: 0.15rem;
-	margin-right: 0.3rem;
+	position: absolute;
+	right: 0.3rem;
+	bottom: -5px;
+}
+.blank{
+	width: 100%;
+	height: 5rem;
 }
 .tabbar{
 	width: 100%;
-	height: 49px;
+	height: 0.98rem;
 	position: fixed;
 	bottom: 0px;
 	background-color: #f2f5f5;
 }
 .tabbar-icon{
 	width: 20%;
-	height: 14px;
-	padding-top: 30px;
+	height: 0.2rem;
+	padding-top: calc(0.6rem + 5px);
 	margin-top: 5px;
 	color: #9da0a0;
 	float: left;
 	text-align: center;
-	font-size: 12px;
+	font-size: 0.2rem;
 }
 .home{
 	background-image: url(../images/home.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 24px 24px;
+	background-size: 0.6rem 0.6rem;
 }
 .maicai{
 	background-image: url(../images/购物篮.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 24px 24px;
+	background-size: 0.6rem 0.6rem;
 }
 .shengqi{
 	background-image: url(../images/礼物.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 24px 24px;
+	background-size: 0.6rem 0.6rem;
 }
 .me{
 	background-image: url(../images/我的.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 24px 24px;
+	background-size: 0.6rem 0.6rem;
 }
 .share{
 	background-image: url(../images/分享.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 24px 24px;
+	background-size: 0.6rem 0.6rem;
 }
 .home-active{
 	background-image: url(../images/home-active.png);
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 24px 24px;
+	background-size: 0.6rem 0.6rem;
 }

@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script type="text/javascript" src="js/flexible.js" ></script>
+		<!--<script type="text/javascript" src="js/flexible.js" ></script>-->
 		<script type="text/javascript" src="js/swiper-3.4.0.min.js" ></script>
 		<link rel="stylesheet" href="css/swiper-3.4.0.min.css" />
 		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/flexible.js" ></script>
+		<!-- 引用MUI的js只是为了修改状态栏颜色 -->
+		<script type="text/javascript" src="js/mui.min.js" ></script> 
 		<title>家乐宝</title>
 	</head>
 	<body>
@@ -87,6 +90,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 送礼神器 -->
 			<div class="gift-artifact">
 				<div class="today-select-title">
 					<h3>送礼神器</h3>
@@ -180,16 +184,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="blank"></div>
 		</div>
 		<div class="tabbar">
 			<div class="tabbar-icon home-active">首页</div>
-			<div class="tabbar-icon maicai">首页</div>
-			<div class="tabbar-icon shengqi">首页</div>
-			<div class="tabbar-icon me">首页</div>
-			<div class="tabbar-icon share">首页</div>
+			<div class="tabbar-icon maicai">我要买菜</div>
+			<div class="tabbar-icon shengqi">送礼神器</div>
+			<div class="tabbar-icon me">我家</div>
+			<div class="tabbar-icon share">分享</div>
 		</div>
 	</body>
 	<script>
+		mui.plusReady(function() {
+			plus.navigator.setStatusBarBackground("#b60915");
+			// 设置状态栏 样式
+			plus.navigator.setStatusBarStyle('UIStatusBarStyleDefault');
+		})      
 		var mySwiper = new Swiper ('.swiper-container', {
 //		    direction: 'vertical',
 		    loop: true,
