@@ -183,7 +183,7 @@ body{
 }
 .gift-artifact-list-left{
 	float: left;
-	height: 11.3125rem;
+	height: 50%;
 	width: 11rem;
 }
 .gift-artifact-list-left .bottom-line{
@@ -225,7 +225,7 @@ body{
 .gift-artifact-list-right{
 	float: left;
 	height: 11.375rem;
-	width: calc(100% - 11rem - 1px);
+	width: calc(50% - 1px);
 	border-left: 1px solid #ececec;
 	text-align: center;
 	position: relative;
@@ -268,7 +268,7 @@ body{
 	right: 10px;
 	width: 44px;
 	height: 44px;
-	background-image: url(../images/返回顶部.png);
+	background-image: url(../images/backtop.png);
 	background-size: 40px 40px;
 	background-repeat: no-repeat;
 	background-position: center center;

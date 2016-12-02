@@ -37,12 +37,6 @@
 	</body>
 	<script src="js/mui.min.js"></script>
 	<script type="text/javascript" charset="utf-8">
-		// 登录默认美丽达请求数据
-		mui.plusReady(function() {
-			plus.navigator.setStatusBarBackground("#b60915");
-			// 设置状态栏 样式
-			plus.navigator.setStatusBarStyle('UIStatusBarStyleDefault');
-		})
 		//mui初始化
 		mui.init();
 		//处理逻辑：1秒内，连续两次按返回键，则退出应用；
@@ -76,6 +70,9 @@
 		};
 		//创建子页面，首个选项卡页面显示，其它均隐藏；
 		mui.plusReady(function() {
+			plus.navigator.setStatusBarBackground("#b60915");
+			// 设置状态栏 样式
+			plus.navigator.setStatusBarStyle('UIStatusBarStyleDefault');
 			var self = plus.webview.currentWebview();
 			for (var i = 0; i < subpages.length; i++) {
 				var temp = {};

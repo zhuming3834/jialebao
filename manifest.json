@@ -189,5 +189,102 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"images/home-active.png",
+					"images/我的.png",
+					"images/购物篮.png",
+					"js/mui.min.js",
+					"css/app.css",
+					"css/mui.min.css",
+					"images/礼物.png",
+					"images/分享.png",
+					"template/home.html",
+					"images/share.png",
+					"images/lanzi.png",
+					"images/礼物-active.png",
+					"images/home.png",
+					"images/lanzi-active.png",
+					"images/tliwu.png",
+					"images/me.png",
+					"images/tliwu-active.png",
+					"images/share-active.png",
+					"images/me-active.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"template/home.html": {
+				"resources": [
+					"images/tuijian.gif",
+					"images/UI_10.gif",
+					"images/优惠团购.png",
+					"js/swiper-3.4.0.min.js",
+					"images/分享有礼.png",
+					"images/UI_27.gif",
+					"images/banner.gif",
+					"images/鸡腿.png",
+					"images/UI_15.gif",
+					"images/UI_40.gif",
+					"css/swiper-3.4.0.min.css",
+					"images/UI_30-32.gif",
+					"images/UI_41-44.gif",
+					"js/mui.js",
+					"images/酱油.png",
+					"images/UI_28-31.gif",
+					"fonts/mui.ttf",
+					"images/企业福利.png",
+					"images/杂粮礼盒.png",
+					"images/返回顶部.png",
+					"css/home.css",
+					"images/UI_45.png",
+					"images/香蕉.png",
+					"images/账户充值.png",
+					"images/UI_18.gif",
+					"images/UI_08.gif",
+					"images/UI_22.gif",
+					"images/UI_25.gif",
+					"images/UI_35.gif",
+					"images/UI_12.gif",
+					"images/UI_38.gif",
+					"images/白菜.png",
+					"css/mui.min.css",
+					"images/baicai.png",
+					"images/backtop.png",
+					"images/liwu.png",
+					"images/fuli.png",
+					"images/jitui.png",
+					"images/jiangyou.png",
+					"images/youhui.png",
+					"images/banana.png",
+					"images/zaliang.png",
+					"images/charge.png"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"images/我的-active.png",
+				"images/5.jpg",
+				"images/购物篮-active.png",
+				"images/tb5s.jpg",
+				"images/回顶部.png",
+				"css/mui.css",
+				"css/index.css",
+				"images/搜索.png",
+				"images/tb6.jpg",
+				"images/分享-active.png",
+				"images/logo.jpg",
+				"images/UI.jpg",
+				"js/flexible.js",
+				"images/回顶部-active.png",
+				"README.md"
+			]
+		}
 	}
 }

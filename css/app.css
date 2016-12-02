@@ -25,7 +25,7 @@ body, .mui-content {
 }
 
 .nav nav {
-	margin-top: 2px;
+	margin-top: 4px;
 }
 
 .nav .mui-tab-label {
@@ -34,9 +34,9 @@ body, .mui-content {
 
 .nav a .icon {
 	display: block;
-	width: 20px;
+	width: 24px;
 	margin: 0px auto;
-	height: 20px;
+	height: 24px;
 }
 
 .nav a .icon-home {
@@ -45,21 +45,21 @@ body, .mui-content {
 }
 
 .nav a .icon-maicai {
-	background: url(../images/购物篮.png) no-repeat;
+	background: url(../images/lanzi.png) no-repeat;
 	background-size: cover;
 }
 
 .nav a .icon-shenqi {
-	background: url(../images/礼物.png) no-repeat;
+	background: url(../images/tliwu.png) no-repeat;
 	background-size: cover;
 }
 
 .nav a .icon-me {
-	background: url(../images/我的.png) no-repeat;
+	background: url(../images/me.png) no-repeat;
 	background-size: cover;
 }
 .nav a .icon-share {
-	background: url(../images/分享.png) no-repeat;
+	background: url(../images/share.png) no-repeat;
 	background-size: cover;
 }
 .nav a.mui-active .icon-home {
@@ -68,21 +68,21 @@ body, .mui-content {
 }
 
 .nav a.mui-active .icon-maicai {
-	background: url(../images/购物篮-active.png) no-repeat;
+	background: url(../images/lanzi-active.png) no-repeat;
 	background-size: cover;
 }
 
 .nav a.mui-active .icon-shenqi {
-	background: url(../images/礼物-active.png) no-repeat;
+	background: url(../images/tliwu-active.png) no-repeat;
 	background-size: cover;
 }
 
 .nav a.mui-active .icon-me {
-	background: url(../images/我的-active.png) no-repeat;
+	background: url(../images/me-active.png) no-repeat;
 	background-size: cover;
 }
 .nav a.mui-active .icon-share {
-	background: url(../images/分享-active.png) no-repeat;
+	background: url(../images/share-active.png) no-repeat;
 	background-size: cover;
 }
 
