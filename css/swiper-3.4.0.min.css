@@ -206,11 +206,14 @@
 	left: 0;
 	width: 100%
 }
-
+/* 调整小点的位置 */
+.swiper-container-horizontal>.swiper-pagination-bullets{
+	bottom: 1px;
+}
 .swiper-pagination-bullet {
-	width: 0.16rem;
-	height: 0.16rem;
-	/* 修改了上面点的大小 8px -> 0.16rem */
+	width: 0.45rem;
+	height: 0.45rem;
+	/* 修改了上面点的大小 8px -> 0.5rem */
 	display: inline-block;
 	border-radius: 100%;
 	background: #000;
@@ -238,7 +241,9 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
 	opacity: 1;
-	background: #007aff
+	/*background: #007aff;*/ 
+	/* 修改小点的颜色 */
+	background-color: #f87077; 
 }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {

@@ -1,0 +1,99 @@
+body, .mui-content {
+	background: #f3f3f3;
+}
+
+
+/* tab */
+
+.nav {
+	background: #f2f5f5;
+	border-top: solid 1px #c2c2c2;
+}
+
+.mui-bar-tab .mui-tab-item {
+	height: auto !important;
+}
+
+.nav .line {
+	height: 5px;
+}
+
+.nav .line div {
+	width: 25%;
+	float: left;
+	height: 5px;
+}
+
+.nav nav {
+	margin-top: 2px;
+}
+
+.nav .mui-tab-label {
+	font-size: 12px;
+}
+
+.nav a .icon {
+	display: block;
+	width: 20px;
+	margin: 0px auto;
+	height: 20px;
+}
+
+.nav a .icon-home {
+	background: url(../images/home.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a .icon-maicai {
+	background: url(../images/购物篮.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a .icon-shenqi {
+	background: url(../images/礼物.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a .icon-me {
+	background: url(../images/我的.png) no-repeat;
+	background-size: cover;
+}
+.nav a .icon-share {
+	background: url(../images/分享.png) no-repeat;
+	background-size: cover;
+}
+.nav a.mui-active .icon-home {
+	background: url(../images/home-active.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a.mui-active .icon-maicai {
+	background: url(../images/购物篮-active.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a.mui-active .icon-shenqi {
+	background: url(../images/礼物-active.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a.mui-active .icon-me {
+	background: url(../images/我的-active.png) no-repeat;
+	background-size: cover;
+}
+.nav a.mui-active .icon-share {
+	background: url(../images/分享-active.png) no-repeat;
+	background-size: cover;
+}
+
+.nav a.mui-active .mui-tab-label {
+	color: #b50b13;
+}
+
+.nav.mui-bar {
+	-webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .85);
+	box-shadow: 0 0 0px rgba(0, 0, 0, .85);
+}
+
+
+
