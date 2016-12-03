@@ -220,7 +220,7 @@ body{
 	font-size: 0.75rem;
 	position: absolute;
 	right: 0px;
-	top: calc(2.5rem + 5px);
+	top: calc(2.5rem + 5px);  
 }
 .gift-artifact-list-left-top label span{
 	font-size: 0.625rem;
