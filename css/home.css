@@ -183,8 +183,8 @@ body{
 }
 .gift-artifact-list-left{
 	float: left;
-	height: 50%;
-	width: 11rem;
+	height: 11.375rem;
+	width: 50%;
 }
 .gift-artifact-list-left .bottom-line{
 	border-bottom: 1px solid #ececec;
@@ -203,20 +203,24 @@ body{
 	padding-top: 10px;
 }
 .gift-artifact-list-left-top p{
+	position: absolute;
+	top: 1.5625rem;
+	right: 0px;
+	margin: 0px;
 	color: #3b3b3b;
 	font-weight: 800;
 	font-size: 0.875rem;
 	text-align: right;
-	margin: 0px 0px 0px 0px;
-	padding-top: 1.5625rem;
 }
 .gift-artifact-list-left-top label{
 	display: block;
 	text-align: right;
-	margin-top: 5px;
+	margin: 0px;
 	color: #bcbcbc;
 	font-size: 0.75rem;
-	margin: 0px;
+	position: absolute;
+	right: 0px;
+	top: calc(2.5rem + 5px);
 }
 .gift-artifact-list-left-top label span{
 	font-size: 0.625rem;
