@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/share.css" />
+		<link rel="stylesheet" href="../css/app.css" />
+		<!-- 引用MUI的js只是为了修改状态栏颜色 -->
+		<script type="text/javascript" src="../js/mui.js" ></script> 
+		<script type="text/javascript" href="../js/flexible.js" ></script>
+		<title></title>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav red">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left white"></a>
+			<div class="mui-title header-title">分享</div>
+			<div class="mui-icon mui-icon-home nav-right"></div>
+		</header>
+		<div class="content">
+			<div class="share-qrcode">
+				<h3>分享专属二维码</h3>
+				<span>您的专属二维码已经生成</span> 
+			</div>
+			<div class="qrcode-area">
+				<img src="../images/Icon@2x.png" />
+				<span>请使用微信扫描或分享此二维码</span>
+			</div>
+			<div class="share-qrcode">
+				<h3>分享到圈子</h3>
+				<span>一键分享幸福快乐给圈中好友</span> 
+			</div>
+			<div class="share-area">
+				<img src="../images/wxpyc.png" id="wxpyc" />
+				<img src="../images/wx.png" id="wx" />
+				<img src="../images/sina.png" id="sina" />
+			</div>
+		</div>
+	</body>
+	<script>
+		var Intent = null,
+			File = null,
+			Uri = null,
+			main = null;
+		var shares = null;
+		var shareImageUrl = '';
+		mui.plusReady(function() {  
+			updateSerivces();
+			if (plus.os.name == "Android") {
+				Intent = plus.android.importClass("android.content.Intent");
+				File = plus.android.importClass("java.io.File");
+				Uri = plus.android.importClass("android.net.Uri");
+				main = plus.android.runtimeMainActivity();
+			}
+		})
+		/**
+		 * 更新分享服务
+		 */
+		function updateSerivces() {
+			plus.share.getServices(function(s) {
+				shares = {};
+				for (var i in s) {
+					var t = s[i];
+					shares[t.id] = t;
+					console.log("---- " + t.id);
+					console.log("++++ " + t.description);
+				}
+			 	outSet("获取分享服务列表成功");
+			}, function(e) {
+				outSet("获取分享服务列表失败：" + e.message);
+			});
+		}
+		
+		document.getElementById('wxpyc').addEventListener('tap',function(){
+			console.log('tap wxpyc');
+			shareAction(1);
+		});
+		document.getElementById('wx').addEventListener('tap',function(){
+			console.log('tap wx');
+			shareAction(2);
+		})
+		document.getElementById('sina').addEventListener('tap',function(){
+			console.log('tap sina');
+			shareAction(3);
+		})
+		
+		/**
+		 * 分享操作
+		 */
+		function shareAction(index) {
+			var ids = [{
+						id: "weixin", 
+						ex: "WXSceneTimeline"  /*微信朋友圈*/
+					}, {
+						id: "weixin",
+						ex: "WXSceneSession" /*微信好友*/
+					},{
+						id: "sinaweibo",  /*新浪微博*/
+						ex: "sinaweibo"  /*新浪微博*/
+					}];
+			
+			console.log('ex = ' + ids[index - 1].ex);
+			console.log('index = ' + index);
+			console.log('shares[id]' + shares[ids[index - 1].id]);
+			var s = null;
+			if (!index || !(s = shares[ids[index - 1].id])) {
+				outLine("无效的分享服务！");
+				return;
+			}
+			if (s.authenticated) {
+				outSet("---已授权---");
+				shareMessage(s,ids[index - 1].ex);
+			} else {
+				outSet("---未授权---");
+				s.authorize(function() {
+					shareMessage(s,ids[index - 1].ex);
+				}, function(e) {
+					outLine("认证授权失败");
+				});
+			}
+		}
+		/**
+		 * 发送分享消息
+		 */
+		function shareMessage(s, ex) {
+			var msg = {
+				content: '分享-详情',
+				href: 'http://blog.csdn.net/zhuming3834',
+				title: 'HGDQ-分享测试-title',
+				content: 'HGDQ-分享测试-content',
+				thumbs: ['http://img3.3lian.com/2013/v10/4/87.jpg'],
+				pictures: ['http://img3.3lian.com/2013/v10/4/87.jpg'],
+				extra: {
+					scene: ex
+				}
+			};
+			s.send(msg, function() {
+				outLine("分享成功!");
+			}, function(e) {
+				outLine("分享失败!");
+			});
+		}
+		/**
+		 * 分享按钮点击事件
+		 * 注意这里的这些id值
+		 */
+		function shareHref() {
+			var ids = [{
+					id: "weixin", 
+					ex: "WXSceneSession"  /*微信好友*/
+				}, {
+					id: "weixin",
+					ex: "WXSceneTimeline" /*微信朋友圈*/
+				}, {
+					id: "sinaweibo"  /*新浪微博*/
+				}],
+				bts = [{
+					title: "发送给微信好友"
+				}, {
+					title: "分享到微信朋友圈"
+				},{
+					title: "分享到新浪微博"
+				}];
+			plus.nativeUI.actionSheet({
+					cancel: "取消",
+					buttons: bts
+				},
+				function(e) {
+					var i = e.index;
+					console.log('i = ' + i);
+					if (i > 0) {
+						shareAction(ids[i - 1].id, ids[i - 1].ex);
+					}
+				}
+			);
+		}		
+		// 控制台输出日志
+		function outSet(msg) {
+			console.log(msg);
+		}
+		// 界面弹出吐司提示
+		function outLine(msg) {
+			mui.toast(msg);
+		}
+	</script>
+</html>

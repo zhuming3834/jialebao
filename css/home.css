@@ -1,39 +1,4 @@
-body{
-	margin: 0px;
-	background-color: #eeeeee;
-	/*position: relative;*/
-}
-.red{
-	background-color: #b60915;
-	width: 100%;
-	box-shadow: none;
-}
-.header-timer{
-	float: left;
-	/*margin-left: 10px;*/
-	width: 80px;
-	height: 40px;
-	line-height: 20px;
-	margin-top: 2px;
-	font-size: 14px;
-	color: #ffee46;
-	font-style: italic;
-	font-weight: bold;
-	text-align: center;
-}
-.header-title{
-	font-size: 20px;
-	color: white;
-	font-weight: bold;
-}
-.nav-right{
-	float: right;
-	color: white;
-	font-weight: bold;
-}
-.content{
-	margin-top: 44px;
-}
+
 .swiper-container{
     /*width: 100%;*/ 
     height: 10.625rem;
@@ -277,5 +242,5 @@ body{
 	background-repeat: no-repeat;
 	background-position: center center;
 	z-index: 100;
-	/*display: none;*/
+	display: none;
 }
